@@ -19,8 +19,12 @@ img {
     margin-right: 0%;
 }
 
-.portfolioImage{
+.portfolioImage {
     position: relative;
+    height: 211px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
 }
 
 .portfolioImage img{
@@ -83,6 +87,21 @@ img {
   color: white;
 }
 
+.red {
+  background-color:red;
+}
+
+.blue {
+  background-color:blue;
+}
+
+.green {
+  background-color:green;
+}
+
+.gold {
+  background-color:gold;
+}
 
 
 .portfolioText {
