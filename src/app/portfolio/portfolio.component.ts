@@ -28,4 +28,8 @@ export class PortfolioComponent implements OnInit {
       this.selectedCategory = clickedCategory;
     }
 
+    viewProject(clickedProjectKey){
+    this.router.navigate(['projects', clickedProjectKey])
+  }
+
 }

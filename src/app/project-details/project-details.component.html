@@ -1,0 +1,9 @@
+<div class="container top">
+  <div>
+    <p class="images" *ngFor="let screenshot of (project | async)?.screenshots"><img  src="{{screenshot}}" alt="{{(project | async)?.name}}"></p>
+    <p><b>{{(project | async)?.name}}</b></p>
+    <p>{{(project | async)?.description}}</p>
+    <p>{{(project | async)?.githubLink}}</p>
+    <p>{{(project | async)?.projectLink}}</p>
+    </div>
+  </div>

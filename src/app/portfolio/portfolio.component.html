@@ -4,12 +4,12 @@
     <button  class="btn" [ngClass]="{'unselected': selectedCategory !== project, 'orange':  selectedCategory == 'Angular' && project == 'Angular', 'blue': selectedCategory == 'Javascript' && project == 'Javascript', 'green': selectedCategory == 'Wordpress' && project == 'Wordpress', 'yellow': selectedCategory == 'C#' && project == 'C#'}" *ngFor="let project of projects | async | unique" (click)="filterProjects(project)">{{project}}</button>
   </div>
   <div *ngFor="let project of projects | async | filterCategory: selectedCategory" class="portfolioDiv">
-    <div class="portfolioImage">
+    <div (click)="viewProject(project.$key)" class="portfolioImage">
       <img src={{project.screenshots[0]}} >
       <p class="portfolioCategory" [ngClass]="{'orange': project.category == 'Angular', 'blue': project.category == 'Javascript', 'green': project.category == 'Wordpress', 'yellow': project.category == 'C#'}"
 >{{project.category}}</p>
     </div>
-    <div class="portfolioText">
+    <div (click)="viewProject(project.$key)" class="portfolioText">
       <p class="portfolioName">{{project.name}}</p>
       <p class="portfolioDescription">{{project.description}}</p>
     </div>

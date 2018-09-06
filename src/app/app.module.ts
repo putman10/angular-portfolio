@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { UniquePipe } from './unique.pipe';
 import { FilterCategoryPipe } from './filterCategory.pipe';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +30,9 @@ export const firebaseConfig = {
     HomeComponent,
     PortfolioComponent,
     UniquePipe,
-    FilterCategoryPipe
+    FilterCategoryPipe,
+    ProjectDetailsComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
