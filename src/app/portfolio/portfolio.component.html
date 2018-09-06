@@ -2,7 +2,7 @@
   <div *ngFor="let project of projects | async" class="portfolioDiv">
     <div class="portfolioImage">
       <img src={{project.screenshots[0]}} >
-      <p class="portfolioCategory" [ngClass]="{'red': project.category == 'Angular', 'blue': project.category == 'Javascript', 'green': project.category == 'Wordpress', 'gold': project.category == 'C#'}"
+      <p class="portfolioCategory" [ngClass]="{'orange': project.category == 'Angular', 'blue': project.category == 'Javascript', 'green': project.category == 'Wordpress', 'yellow': project.category == 'C#'}"
 >{{project.category}}</p>
     </div>
     <div class="portfolioText">

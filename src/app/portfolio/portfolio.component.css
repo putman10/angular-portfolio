@@ -87,20 +87,20 @@ img {
   color: white;
 }
 
-.red {
-  background-color:red;
+.orange {
+  background-color: rgba(229, 75, 67, 0.9);
 }
 
 .blue {
-  background-color:blue;
+  background-color: rgba(92, 140, 201, 0.9);
 }
 
 .green {
-  background-color:green;
+  background-color: rgba(55, 182, 103, 0.9);
 }
 
-.gold {
-  background-color:gold;
+.yellow {
+  background-color: rgba(246, 199, 18, 0.9);
 }
 
 
