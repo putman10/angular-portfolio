@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { Project } from './models/project.model'
 import * as _ from 'lodash';
 
 @Pipe({
@@ -7,18 +8,19 @@ import * as _ from 'lodash';
 })
 
 export class UniquePipe implements PipeTransform {
+  transform(input: Project[]){
+    let filteredArray = [];
 
-    transform(value: any, args?: any): any {
-    let categories = [];
+      input.forEach(function(element){
 
-      value.forEach(function(project){
-        if (categories.includes(project.category)) {
+          if(filteredArray.includes(element.category)){
 
-        } else{
-          categories.push(project.category);
-        }
-      });
-      return categories;
 
-    }
+          } else {
+            filteredArray.push(element.category);
+          }
+    });
+    return filteredArray;
+
+  }
   }

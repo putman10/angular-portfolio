@@ -129,10 +129,21 @@ img {
   background-color: rgba(246, 199, 18, 0.9);
 }
 
+/* .viewAll,
+.orangeFilter,
+.blueFilter,
+.greenFilter,
+.yellowFilter {
+  background-color: rgba(0, 0, 0, 0.34);
+} */
+
 .viewAll {
-  background-color: rgba(123, 56, 232, 0.9);
+  background-color: rgba(211, 121, 32, 0.9);
 }
 
+.unselected {
+  background-color: rgba(0, 0, 0, 0.34);
+}
 
 .portfolioText {
   padding:10px;

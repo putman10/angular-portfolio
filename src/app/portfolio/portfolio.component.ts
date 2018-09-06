@@ -15,11 +15,17 @@ import { Location } from '@angular/common';
 export class PortfolioComponent implements OnInit {
 
   projects: FirebaseListObservable<any[]>;
+  selectedCategory = "View All";
 
     constructor(private router: Router, private projectService: ProjectService, private route: ActivatedRoute, private location: Location) { }
 
     ngOnInit() {
       this.projects = this.projectService.getProjects();
+    }
+
+    filterProjects(clickedCategory: string){
+      this.selectedCategory = clickedCategory;
+      console.log(this.selectedCategory);
     }
 
 }
