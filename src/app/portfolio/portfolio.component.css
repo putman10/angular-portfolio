@@ -10,9 +10,9 @@ img {
     display: inline-block;
     vertical-align: top;
     margin-right: 2%;
-    -webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.62);
-    -moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.62);
-    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.4);
     -webkit-transition: background-color 1s ease-out, box-shadow 1s ease-out, -webkit-box-shadow 1s ease-out, -moz-box-shadow 1s ease-out;
     -moz-transition: background-color 1s ease-out, box-shadow 1s ease-out, -webkit-box-shadow 1s ease-out, -moz-box-shadow 1s ease-out;
     -o-transition: background-color 1s ease-out, box-shadow 1s ease-out, -webkit-box-shadow 1s ease-out, -moz-box-shadow 1s ease-out;
@@ -21,12 +21,12 @@ img {
 
 .portfolioDiv:hover {
   background-color: rgba(119, 34, 32, 0.7);
-  -webkit-box-shadow: 0px 0px 21px 0px rgba(229, 229, 229, 0.9);
-  -moz-box-shadow: 0px 0px 21px 0px rgba(229, 229, 229, 0.9);
-  box-shadow: 0px 0px 21px 0px rgba(229, 229, 229, 0.9);
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(229, 229, 229, 0.6);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(229, 229, 229, 0.6);
+  box-shadow: 0px 0px 21px 0px rgba(229, 229, 229, 0.6);
 }
 
-.portfolioDiv:nth-of-type(4n) {
+.portfolioDiv:nth-of-type(4n + 1) {
     margin-right: 0%;
 }
 
@@ -128,6 +128,10 @@ img {
   background-color: rgba(246, 199, 18, 0.9);
 }
 
+.viewAll {
+  background-color: rgba(123, 56, 232, 0.9);
+}
+
 
 .portfolioText {
   padding:10px;
@@ -140,4 +144,15 @@ img {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.categoryFilters {
+  margin-bottom: 2rem;
+}
+
+.categoryFilters button{
+  margin-right: 10px;
+  font-weight:700;
+  color: white;
+  text-transform: uppercase;
 }
