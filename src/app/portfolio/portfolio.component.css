@@ -61,30 +61,42 @@ img {
 }
 
 .portfolioButtons button {
-  text-transform: uppercase;
   font-weight: 700;
-}
-
-.portfolioButtons button:hover {
-  text-transform: uppercase;
-  font-weight: 700;
-  background-color: rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, 0.7);
 }
 
 .btn-left{
-  width: 49.2%;
-  border-radius: 0 0 0 15px;
-  background-color: rgba(0, 0, 0, 0.4);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+    width: 49.2%;
+    border-radius: 0 0 0 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'portfolio-font';
+    font-size: 26px;
+    line-height: normal;
+    padding: 6px 4px 2px 4px;
+    -webkit-transition: color 2s ease-out, background-color 2s ease-out;
+    -moz-transition: color 2s ease-out, background-color 2s ease-out;
+    -o-transition: color 2s ease-out, background-color 2s ease-out;
+    transition: color 2s ease-out, background-color 2s ease-out;
 }
+
 .btn-right{
   width: 49.2%;
   border-radius: 0 0 15px 0;
   background-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.5);
   color: white;
+  -webkit-transition: color 2s ease-out, background-color 2s ease-out;
+  -moz-transition: color 2s ease-out, background-color 2s ease-out;
+  -o-transition: color 2s ease-out, background-color 2s ease-out;
+  transition: color 2s ease-out, background-color 2s ease-out;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  color: green;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
 }
 
 .orange {
@@ -106,4 +118,13 @@ img {
 
 .portfolioText {
   padding:10px;
+  text-transform: none;
+}
+
+.portfolioDescription {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
