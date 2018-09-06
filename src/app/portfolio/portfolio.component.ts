@@ -16,6 +16,7 @@ export class PortfolioComponent implements OnInit {
 
   projects: FirebaseListObservable<any[]>;
   selectedCategory = "View All";
+  bounce: any;
 
     constructor(private router: Router, private projectService: ProjectService, private route: ActivatedRoute, private location: Location) { }
 
@@ -25,7 +26,6 @@ export class PortfolioComponent implements OnInit {
 
     filterProjects(clickedCategory: string){
       this.selectedCategory = clickedCategory;
-      console.log(this.selectedCategory);
     }
 
 }
