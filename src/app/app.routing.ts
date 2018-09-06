@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditProjectComponent } from './edit-project/edit-project.component';
 
 const appRoutes: Routes = [
   {
@@ -17,6 +18,10 @@ const appRoutes: Routes = [
     {
       path: 'projects/:id',
       component: ProjectDetailsComponent
+    },
+    {
+      path: 'projects/:id/edit',
+      component: EditProjectComponent
     },
     {
       path: 'admin',

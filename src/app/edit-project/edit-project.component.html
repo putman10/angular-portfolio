@@ -1,0 +1,29 @@
+<div class="container edit">
+<h3>Editing <strong>{{(project | async)?.name}}</strong></h3>
+<div class="form" id="editForm">
+  <form class="editForm">
+    <div class="form-group">
+      <label for="name">Edit Name:</label>
+      <input type="text" name="name" class="form-control" value="{{(project | async)?.name}}" #name>
+    </div>
+    <div class="form-group">
+      <label for="description">Edit Project Description:</label>
+      <textarea class="form-control" rows="5" id="description" value="{{(project | async)?.description}}" #description>{{(project | async)?.description}}</textarea>
+    </div>
+    <input type="hidden" name="screenshots" class="form-control" value="{{(project | async)?.screenshots}}" #screenshots>
+    <div class="form-group">
+      <label for="githubLink">Edit GitHub Link:</label>
+      <input type="text" name="githubLink" class="form-control" value="{{(project | async)?.githubLink}}" #githubLink>
+    </div>
+    <div class="form-group">
+      <label for="projectLink">Edit Project Link:</label>
+      <input type="text" name="projectLink" class="form-control" value="{{(project | async)?.projectLink}}" #projectLink>
+    </div>
+    <div class="form-group">
+      <label for="category">Edit Category:</label>
+      <input type="text" name="category" class="form-control" value="{{(project | async)?.category}}" #category>
+    </div>
+    <button type="button" name="button" (click)="saveProject(name.value, description.value, screenshots.value, githubLink.value, projectLink.value, category.value)" class="btn btn-warning">Done Updating</button>
+    <button type="button" name="deleteButton" (click)="deleteProject()" class="btn btn-danger">Delete Project</button>
+  </form>
+</div>

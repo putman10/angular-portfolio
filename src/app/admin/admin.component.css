@@ -97,12 +97,12 @@ margin-bottom: 0px;
 
 #admin-titles .col-md-4:first-of-type,
 #admin-titles .col-md-2{
-    border-right: 1px dashed white;
+    border-right: 1px solid white;
 }
 
 #all-projects .col-md-4:first-of-type,
 #all-projects .col-md-2{
-    border-right: 1px dashed black;
+    border-right: 1px solid black;
 }
 
 .adminContainer{
