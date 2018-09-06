@@ -31,7 +31,8 @@ img {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: orangered;
+    background-color: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     padding: 3px 10px;
     color: white;
     text-transform: uppercase;
@@ -60,20 +61,25 @@ img {
   font-weight: 700;
 }
 
+.portfolioButtons button:hover {
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .btn-left{
   width: 49.2%;
   border-radius: 0 0 0 15px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.5);
-  color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 .btn-right{
   width: 49.2%;
   border-radius: 0 0 15px 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.5);
-  color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
