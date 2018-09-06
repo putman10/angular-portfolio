@@ -1,0 +1,141 @@
+#all-projects {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#all-projects p{
+    margin-bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#all-projects #editProject {
+  margin-right: 10px;
+}
+
+#addNew {
+  margin: 10px 0;
+  width: 100%;
+}
+
+a {
+  color:#e65a53;
+}
+
+a:hover {
+  color:#bb2a38;
+  text-decoration: none;
+}
+
+.addNewButton {
+    color: #fff;
+    background-color: #e65a53;
+    border-color: #bb2a38;
+}
+
+.addNewButton:hover {
+    color: #fff;
+    background-color: #833b2f;
+    border-color: #833b2f;
+}
+
+.orange {
+  background-color: rgba(229, 75, 67, 0.9);
+}
+
+.blue {
+  background-color: rgba(92, 140, 201, 0.9);
+}
+
+.green {
+  background-color: rgba(55, 182, 103, 0.9);
+}
+
+.yellow {
+  background-color: rgba(246, 199, 18, 0.9);
+}
+
+#admin-titles {
+    text-align: center;
+    background: #833b2f;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 10px;
+}
+
+.container .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#admin-titles h2{
+font-size: 16px;
+margin-bottom: 0px;
+}
+
+#admin-titles .col-md-4:first-of-type,
+#admin-titles .col-md-2{
+    border-right: 1px dashed white;
+}
+
+#all-projects .col-md-4:first-of-type,
+#all-projects .col-md-2{
+    border-right: 1px dashed black;
+}
+
+.container{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.portfolioButtons p:last-of-type{
+  margin-bottom: 0px;
+  padding-bottom:10px;
+}
+
+.portfolioButtons button {
+  font-weight: 700;
+}
+
+.btn-left{
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'portfolio-font';
+    font-size: 26px;
+    line-height: normal;
+    padding: 6px 4px 2px 4px;
+    -webkit-transition: color 2s ease-out, background-color 2s ease-out;
+    -moz-transition: color 2s ease-out, background-color 2s ease-out;
+    -o-transition: color 2s ease-out, background-color 2s ease-out;
+    transition: color 2s ease-out, background-color 2s ease-out;
+}
+
+.btn-right{
+  width: 61%;
+  background-color: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  -webkit-transition: color 2s ease-out, background-color 2s ease-out;
+  -moz-transition: color 2s ease-out, background-color 2s ease-out;
+  -o-transition: color 2s ease-out, background-color 2s ease-out;
+  transition: color 2s ease-out, background-color 2s ease-out;
+  text-transform: uppercase;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  color: rgb(246, 204, 59);
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}

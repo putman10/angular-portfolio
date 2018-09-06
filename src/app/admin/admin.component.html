@@ -1,3 +1,37 @@
-<p>
-  admin works!
-</p>
+<div class="container">
+  <div>
+    <button class="btn addNewButton" type="button" name="addNew" id="addNew" (click)="addNewProject()"><b>Add New Project</b></button>
+    <div class="row" id="admin-titles">
+      <div class="col-md-4">
+        <h2><b>Name of Project</b></h2>
+      </div>
+      <div class="col-md-2">
+        <h2><b>Project Links</b></h2>
+      </div>
+      <div class="col-md-2">
+        <h2><b>Category</b></h2>
+      </div>
+      <div class="col-md-4">
+        <h2><b>Edit / Delete</b></h2>
+      </div>
+    </div>
+    <div class="row" id="all-projects" *ngFor="let project of projects | async">
+      <div class="col-md-4">
+        <p><a routerLink="/projects/{{project.$key}}"><b>{{project.name}}</b></a></p>
+      </div>
+      <div class="col-md-2 portfolioButtons">
+          <a href={{project.githubLink}}><button class="btn btn-left">a</button></a>
+          <a href={{project.projectLink}}><button class="btn btn-right">Live</button></a>
+      </div>
+      <div class="col-md-2">
+        <p [ngClass]="{'orange': project.category == 'Angular', 'blue': project.category == 'Javascript', 'green': project.category == 'Wordpress', 'yellow': project.category == 'C#'}"><b>{{project.category}}</b></p>
+      </div>
+      <div class="col-md-4">
+        <p>
+          <button (click)='editProject(project.$key)' type="button" id="editProject" name="editProject" class="btn btn-primary">Edit Project</button>
+          <button type="button" name="deleteButton" (click)="deleteProject(project.$key)" class="btn btn-danger">Delete Project</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
