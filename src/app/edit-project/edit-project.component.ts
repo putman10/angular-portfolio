@@ -25,10 +25,12 @@ export class EditProjectComponent implements OnInit {
   }
 
   saveProject(name: string, description: string, screenshots: string[], githubLink: string, projectLink: string, category: string) {
+    let screenshotsArray = [];
+    screenshotsArray.push(screenshots)
     this.project.update({
       name: name,
       description: description,
-      screenshots: screenshots,
+      screenshots: screenshotsArray,
       githubLink: githubLink,
       projectLink: projectLink,
       category: category
