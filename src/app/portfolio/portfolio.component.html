@@ -1,9 +1,9 @@
 <div class="portfolioContainer">
   <div class="categoryFilters">
     <button  class="btn"  [ngClass]="{'viewAll': selectedCategory == 'View All', 'unselected': selectedCategory !== 'View All'}" (click)="filterProjects('View All')">View All</button>
-    <button  class="btn" [ngClass]="{'unselected': selectedCategory == 'View All', 'orange':  selectedCategory == 'Angular' && project == 'Angular', 'blue': selectedCategory == 'Javascript' && project == 'Javascript', 'green': selectedCategory == 'Wordpress' && project == 'Wordpress'}" *ngFor="let project of projects | async | unique" (click)="filterProjects(project)">{{project}}</button>
+    <button  class="btn" [ngClass]="{'unselected': selectedCategory !== project, 'orange':  selectedCategory == 'Angular' && project == 'Angular', 'blue': selectedCategory == 'Javascript' && project == 'Javascript', 'green': selectedCategory == 'Wordpress' && project == 'Wordpress', 'yellow': selectedCategory == 'C#' && project == 'C#'}" *ngFor="let project of projects | async | unique" (click)="filterProjects(project)">{{project}}</button>
   </div>
-  <div *ngFor="let project of projects | async" class="portfolioDiv">
+  <div *ngFor="let project of projects | async | filterCategory: selectedCategory" class="portfolioDiv">
     <div class="portfolioImage">
       <img src={{project.screenshots[0]}} >
       <p class="portfolioCategory" [ngClass]="{'orange': project.category == 'Angular', 'blue': project.category == 'Javascript', 'green': project.category == 'Wordpress', 'yellow': project.category == 'C#'}"
@@ -19,6 +19,3 @@
     </div>
   </div>
 </div>
-
-
-<!-- [ngClass]="{'orange':  selectedCategory == 'Angular', 'blue': selectedCategory == 'Javascript' && project == 'Javascript',  , 'yellow': project == 'C#'}" -->
