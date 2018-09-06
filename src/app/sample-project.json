@@ -29,6 +29,38 @@
           "githubLink": "/",
           "projectLink": "/",
           "category": "Wordpress"
-        }
+        },
+        {
+            "name": "Bucket Buddy",
+            "description": "This was an app created in Angular. It social media site dedicated to matching Bucket List Items",
+            "screenshots": ["./assets/images/bucketbuddy-1.png"],
+            "githubLink": "https://github.com/putman10/BucketBuddy",
+            "projectLink": "https://bucket-list-e2780.firebaseapp.com/",
+            "category": "Angular"
+          },
+          {
+              "name": "The Oregon Trail",
+              "description": "This was a game created in Javascript. It is a recreation of the classic game The Oregon Trail",
+              "screenshots": ["./assets/images/oregonTrail-1.png"],
+              "githubLink": "https://github.com/putman10/oregon-trail",
+              "projectLink": "https://putman10.github.io/oregon-trail/",
+              "category": "Javascript"
+            },
+            {
+                "name": "Ice Tracker",
+                "description": "This was a app created in C#. Information about Redad Alertas can be found at http://redadalertas.com",
+                "screenshots": ["./assets/images/iceTracker-1.png"],
+                "githubLink": "https://github.com/putman10/ICE-tracker",
+                "projectLink": "https://github.com/putman10/ICE-tracker",
+                "category": "C#"
+              },
+              {
+                  "name": "JB Communications",
+                  "description": "This site created in Wordpress. The site was created for the company JB communications.",
+                  "screenshots": ["./assets/images/jbCommunications-1.png"],
+                  "githubLink": "/",
+                  "projectLink": "/",
+                  "category": "Wordpress"
+                }
   ]
 }

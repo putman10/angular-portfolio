@@ -1,7 +1,10 @@
 #all-projects {
     border: 1px solid black;
+    border-bottom: 0;
     padding: 10px;
     text-align: center;
+    border-left: 0;
+    border-right: 0;
 }
 
 #all-projects p{
@@ -40,6 +43,7 @@ a:hover {
     color: #fff;
     background-color: #e65a53;
     border-color: #bb2a38;
+    text-transform: uppercase;
 }
 
 .addNewButton:hover {
@@ -50,36 +54,45 @@ a:hover {
 
 .orange {
   background-color: rgba(229, 75, 67, 0.9);
+  color: white;
 }
 
 .blue {
   background-color: rgba(92, 140, 201, 0.9);
+  color: white;
 }
 
 .green {
   background-color: rgba(55, 182, 103, 0.9);
+  color: white;
 }
 
 .yellow {
   background-color: rgba(246, 199, 18, 0.9);
+  color: white;
 }
 
 #admin-titles {
     text-align: center;
-    background: #833b2f;
+    background: black;
     color: white;
     text-transform: uppercase;
     padding: 15px 10px;
-}
-
-.container .row {
-  margin-right: 0px;
-  margin-left: 0px;
+    border-radius: 15px 15px 0 0;
 }
 
 #admin-titles h2{
 font-size: 16px;
 margin-bottom: 0px;
+}
+
+.projTitleText {
+  background: #ffffffd6;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.4);
+    -webkit-transition: background-color 1s ease-out, box-shadow 1s ease-out, -webkit-box-shadow 1s ease-out, -moz-box-shadow 1s ease-out;
+    transition: background-color 1s ease-out, box-shadow 1s ease-out, -webkit-box-shadow 1s ease-out;
 }
 
 #admin-titles .col-md-4:first-of-type,
@@ -92,9 +105,18 @@ margin-bottom: 0px;
     border-right: 1px dashed black;
 }
 
-.container{
+.adminContainer{
+  padding: 20px;
     margin-top: 6rem;
     margin-bottom: 6rem;
+    background: url(/assets/images/adminBackground.jpeg);
+    background-position: center;
+    border: 1px solid black;
+}
+
+.adminContainer .row{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .portfolioButtons p:last-of-type{
