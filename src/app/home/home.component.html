@@ -1,14 +1,2 @@
 <h1>Test Home Page</h1>
-
-
-<div *ngFor="let project of projects | async" class="card card-default">
-  <h4 class="card-header">{{project.name}}</h4>
-  <div class="card-body">
-    <div *ngFor="let screenshot of project.screenshots">
-      <img src={{screenshot}}>
-    </div>
-    <p>{{project.githubLink}}</p>
-    <p>{{project.projectLink}}</p>
-    <p>{{project.category}}</p>
-  </div>
-</div>
+<app-portfolio></app-portfolio>

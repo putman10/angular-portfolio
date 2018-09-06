@@ -1,0 +1,16 @@
+<div class="portfolioContainer">
+  <div *ngFor="let project of projects | async" class="portfolioDiv">
+    <div class="portfolioImage">
+      <img src={{project.screenshots[0]}} >
+      <p class="portfolioCategory">{{project.category}}</p>
+    </div>
+    <div class="portfolioText">
+      <p class="portfolioName">{{project.name}}</p>
+      <p>{{project.name}}</p>
+    </div>
+    <div class="portfolioButtons">
+      <a href={{project.githubLink}}><button class="btn btn-left">GitHub</button></a>
+      <a href={{project.projectLink}}><button class="btn btn-right">Live Site</button></a>
+    </div>
+  </div>
+</div>

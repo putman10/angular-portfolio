@@ -1,9 +1,30 @@
 { "projects": [{
     "name": "Bucket Buddy",
-    "screenshots": ["https://www.w3schools.com/w3css/img_lights.jpg"],
+    "screenshots": ["./assets/images/bucketbuddy-1.png"],
     "githubLink": "https://github.com/putman10/BucketBuddy",
     "projectLink": "https://bucket-list-e2780.firebaseapp.com/",
     "category": "Angular"
-    }
+  },
+  {
+      "name": "Bucket Buddy",
+      "screenshots": ["./assets/images/bucketbuddy-1.png"],
+      "githubLink": "https://github.com/putman10/BucketBuddy",
+      "projectLink": "https://bucket-list-e2780.firebaseapp.com/",
+      "category": "Angular"
+    },
+    {
+        "name": "Bucket Buddy",
+        "screenshots": ["./assets/images/bucketbuddy-1.png"],
+        "githubLink": "https://github.com/putman10/BucketBuddy",
+        "projectLink": "https://bucket-list-e2780.firebaseapp.com/",
+        "category": "Angular"
+      },
+      {
+          "name": "Bucket Buddy",
+          "screenshots": ["./assets/images/bucketbuddy-1.png"],
+          "githubLink": "https://github.com/putman10/BucketBuddy",
+          "projectLink": "https://bucket-list-e2780.firebaseapp.com/",
+          "category": "Angular"
+        }
   ]
 }

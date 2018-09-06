@@ -9,6 +9,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -20,7 +21,8 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
