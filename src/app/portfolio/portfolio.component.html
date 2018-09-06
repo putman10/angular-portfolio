@@ -1,5 +1,4 @@
 <div class="portfolioContainer">
-  <h1>Ryan Putman Portfolio Items:</h1>
   <div class="categoryFilters">
     <button  class="btn viewAll">View All</button>
     <button  class="btn" [ngClass]="{'orange': project.category == 'Angular', 'blue': project.category == 'Javascript', 'green': project.category == 'Wordpress', 'yellow': project.category == 'C#'}" *ngFor="let project of projects | async">{{project.category}}</button>
