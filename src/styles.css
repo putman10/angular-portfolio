@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    background: url('/assets/images/dust.png');
+    /* background: url('/assets/images/dust.png'); */
+    background-color: #383838;
     background-position: center;
 }
 
@@ -10,4 +11,10 @@ body {
     font-size: 60px;
     color: rgba(216, 88, 86, 0.7);
     font-weight: 900;
+}
+
+.subText .letter{
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
 }

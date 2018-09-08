@@ -8,6 +8,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {TeximateModule} from "ng-teximate";
+import { ParticlesModule } from 'angular-particle';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -46,7 +47,8 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     BrowserAnimationsModule,
-    TeximateModule
+    TeximateModule,
+    ParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
