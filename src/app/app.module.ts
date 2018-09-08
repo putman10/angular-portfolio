@@ -7,7 +7,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {TeximateModule} from "ng-teximate";
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -17,6 +17,7 @@ import { FilterCategoryPipe } from './filterCategory.pipe';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
+import { HomeBannerComponent } from './home-banner/home-banner.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -34,7 +35,8 @@ export const firebaseConfig = {
     FilterCategoryPipe,
     ProjectDetailsComponent,
     AdminComponent,
-    EditProjectComponent
+    EditProjectComponent,
+    HomeBannerComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ export const firebaseConfig = {
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TeximateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,3 +4,10 @@ body {
     background: url('/assets/images/dust.png');
     background-position: center;
 }
+
+
+.letter {
+    font-size: 60px;
+    color: rgba(216, 88, 86, 0.7);
+    font-weight: 900;
+}
