@@ -31,11 +31,11 @@
 }
 
 a {
-  color:#e65a53;
+  color:white;
 }
 
 a:hover {
-  color:#bb2a38;
+  color:rgb(246, 204, 59);
   text-decoration: none;
 }
 
@@ -74,7 +74,7 @@ a:hover {
 
 #admin-titles {
     text-align: center;
-    background: black;
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
     text-transform: uppercase;
     padding: 15px 10px;
@@ -87,12 +87,12 @@ margin-bottom: 0px;
 }
 
 .projTitleText {
-  background: #ffffffd6;
+  background-color: rgba(216, 88, 86, 0.7);
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.4);
-    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.4);
-    -webkit-transition: background-color 1s ease-out, box-shadow 1s ease-out, -webkit-box-shadow 1s ease-out, -moz-box-shadow 1s ease-out;
-    transition: background-color 1s ease-out, box-shadow 1s ease-out, -webkit-box-shadow 1s ease-out;
+  box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.4);
+  -webkit-transition: background-color 1s ease-out, box-shadow 1s ease-out, -webkit-box-shadow 1s ease-out, -moz-box-shadow 1s ease-out;
+  transition: background-color 1s ease-out, box-shadow 1s ease-out, -webkit-box-shadow 1s ease-out;
 }
 
 #admin-titles .col-md-4:first-of-type,
@@ -107,10 +107,8 @@ margin-bottom: 0px;
 
 .adminContainer{
   padding: 20px;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-    background: url(/assets/images/adminBackground.jpeg);
-    background-position: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     border: 1px solid black;
 }
 
@@ -152,11 +150,40 @@ margin-bottom: 0px;
   -moz-transition: color 2s ease-out, background-color 2s ease-out;
   -o-transition: color 2s ease-out, background-color 2s ease-out;
   transition: color 2s ease-out, background-color 2s ease-out;
-  text-transform: uppercase;
 }
 
 .btn-left:hover,
 .btn-right:hover {
+  color: rgb(246, 204, 59);
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.btn-edit{
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    -webkit-transition: color 2s ease-out, background-color 2s ease-out;
+    -moz-transition: color 2s ease-out, background-color 2s ease-out;
+    -o-transition: color 2s ease-out, background-color 2s ease-out;
+    transition: color 2s ease-out, background-color 2s ease-out;
+
+}
+
+.btn-delete{
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  -webkit-transition: color 2s ease-out, background-color 2s ease-out;
+  -moz-transition: color 2s ease-out, background-color 2s ease-out;
+  -o-transition: color 2s ease-out, background-color 2s ease-out;
+  transition: color 2s ease-out, background-color 2s ease-out;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
   color: rgb(246, 204, 59);
   background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;

@@ -34,7 +34,7 @@ img {
 .portfolioImage {
     position: relative;
     height: 211px;
-    overflow-y: scroll;
+    overflow: hidden;
     background-color: white;
     border-radius: 15px 15px 0 0;
 }
@@ -65,9 +65,11 @@ img {
 .portfolioContainer {
     background: url('/assets/images/portfolioBackground.jpg');
     background-position: center;
-    padding: 20px;
+    background-size: cover;
+    padding: 12rem 20px;
     border: 1px solid black;
-    margin:2rem 0;
+    margin: 12rem 0;
+    min-height: 968px;
 }
 
 .portfolioButtons p:last-of-type{
@@ -105,7 +107,6 @@ img {
   -moz-transition: color 2s ease-out, background-color 2s ease-out;
   -o-transition: color 2s ease-out, background-color 2s ease-out;
   transition: color 2s ease-out, background-color 2s ease-out;
-  text-transform: uppercase;
 }
 
 .btn-left:hover,

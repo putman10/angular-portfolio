@@ -15,15 +15,13 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('scrollAnimation', [
       state('show', style({
-        opacity: 1,
-        transform: "translateX(0)"
+        opacity: 1
       })),
       state('hide',   style({
-        opacity: 0,
-        transform: "translateX(-100%)"
+        opacity: 0
       })),
-      transition('show => hide', animate('700ms ease-out')),
-      transition('hide => show', animate('700ms ease-in'))
+      transition('show => hide', animate('500ms ease-out')),
+      transition('hide => show', animate('500ms ease-in'))
     ])
   ]
 })
