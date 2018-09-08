@@ -67,6 +67,7 @@ img {
     background-position: center;
     padding: 20px;
     border: 1px solid black;
+    margin:2rem 0;
 }
 
 .portfolioButtons p:last-of-type{

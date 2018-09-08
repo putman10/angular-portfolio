@@ -1,4 +1,4 @@
-<div class="portfolioContainer">
+<div class="portfolioContainer" [@scrollAnimation]="state">
   <div class="categoryFilters">
     <button  class="btn"  [ngClass]="{'viewAll': selectedCategory == 'View All', 'unselected': selectedCategory !== 'View All'}" (click)="filterProjects('View All')">View All</button>
     <button  class="btn" [ngClass]="{'unselected': selectedCategory !== project, 'orange':  selectedCategory == 'Angular' && project == 'Angular', 'blue': selectedCategory == 'Javascript' && project == 'Javascript', 'green': selectedCategory == 'Wordpress' && project == 'Wordpress', 'yellow': selectedCategory == 'C#' && project == 'C#'}" *ngFor="let project of projects | async | unique" (click)="filterProjects(project)">{{project}}</button>
