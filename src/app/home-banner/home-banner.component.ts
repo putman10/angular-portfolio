@@ -76,7 +76,7 @@ export class HomeBannerComponent implements OnInit {
         }
         },
         "size": {
-        "value": 4.008530152163807,
+        "value": 6,
         "random": true,
         "anim": {
           "enable": false,
@@ -94,7 +94,7 @@ export class HomeBannerComponent implements OnInit {
         },
         "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 3,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -151,7 +151,7 @@ export class HomeBannerComponent implements OnInit {
         }
 
   text = "Hello, I'm Ryan Putman!";
-  subText = "Front-end Dev | Native Oregonian | Goonie | Oregon Duck";
+  subText = "Front-end Dev | Native Oregonian | Proud Goonie | Oregon Duck";
 
   effectOptions: TeximateOptions = {
     type: 'letter',
