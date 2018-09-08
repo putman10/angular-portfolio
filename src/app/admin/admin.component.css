@@ -109,7 +109,7 @@ margin-bottom: 0px;
   padding: 20px;
     margin-top: 8rem;
     margin-bottom: 8rem;
-    border: 1px solid black;
+
 }
 
 .adminContainer .row{
@@ -187,4 +187,10 @@ margin-bottom: 0px;
   color: rgb(246, 204, 59);
   background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
+}
+
+.containerTitle{
+  font-size:60px;
+  font-weight: 900;
+  color:white;
 }

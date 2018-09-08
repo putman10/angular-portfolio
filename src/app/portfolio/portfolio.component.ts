@@ -59,19 +59,4 @@ export class PortfolioComponent implements OnInit {
 
     }
 
-    text = "Some of My Work...";
-
-    effectOptions: TeximateOptions = {
-      type: 'letter',
-      animation: { name: 'fadeInLeftBig', duration: 1000 },
-      word: { type: TeximateOrder.SEQUENCE, delay: 100 },
-      letter: { type: TeximateOrder.SEQUENCE, delay: 50 }
-    };
-
-    hoverOptions: TeximateHover = {
-      type: 'letter',
-      in: 'zoomIn',
-      out: 'rubberBand'
-    };
-
 }

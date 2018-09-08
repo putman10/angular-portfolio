@@ -139,8 +139,8 @@ export class HomeBannerComponent implements OnInit {
         }
         }
 
-  text = "Hello, I'm Ryan Putman...";
-  subText = "Full Stack Dev | Open-Source Enthusiast | Blogger | Ninja";
+  text = "Hello, I'm Ryan Putman!";
+  subText = "Front-end Dev | Native Oregonian | Goonie | Oregon Duck";
 
   effectOptions: TeximateOptions = {
     type: 'letter',

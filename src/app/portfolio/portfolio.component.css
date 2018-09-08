@@ -61,11 +61,10 @@ img {
 
 
 .portfolioContainer {
-    background: url('/assets/images/portfolioBackground.jpg');
+    /* background: url('/assets/images/portfolioBackground.jpg'); */
     background-position: center;
     background-size: cover;
-    padding: 12rem 20px;
-    border: 1px solid black;
+    padding: 16rem 20px;
     margin: 7rem 0;
     min-height: 1258px
 }
@@ -139,7 +138,7 @@ img {
 } */
 
 .viewAll {
-  background-color: rgba(41, 41, 41, 0.9)
+  background-color: rgba(87, 0, 232, 0.9)
 }
 
 .unselected {
@@ -168,4 +167,10 @@ img {
   font-weight:700;
   color: white;
   text-transform: uppercase;
+}
+
+.containerTitle{
+  font-size:60px;
+  font-weight: 900;
+  color:white;
 }
