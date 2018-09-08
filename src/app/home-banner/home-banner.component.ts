@@ -1,10 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { TeximateOptions, TeximateOrder, TeximateHover } from "ng-teximate";
+import { trigger, state, style, animate, transition } from '@angular/animations';
+
 
 @Component({
   selector: 'app-home-banner',
   templateUrl: './home-banner.component.html',
-  styleUrls: ['./home-banner.component.css']
+  styleUrls: ['./home-banner.component.css'],
+  animations: [
+  trigger('flyInOut', [
+    state('in', style({opacity: 1})),
+    transition('void => *', [
+      style({opacity: 0}),
+      animate('500ms 4000ms ease-in')
+    ])
+  ])
+]
 })
 export class HomeBannerComponent implements OnInit {
 
