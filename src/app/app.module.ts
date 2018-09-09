@@ -21,6 +21,10 @@ import { EditProjectComponent } from './edit-project/edit-project.component';
 import { HomeBannerComponent } from './home-banner/home-banner.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SkillsComponent } from './skills/skills.component';
+import { FooterComponent } from './footer/footer.component';
+import { ResumeComponent } from './resume/resume.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -41,7 +45,11 @@ export const firebaseConfig = {
     EditProjectComponent,
     HomeBannerComponent,
     NavBarComponent,
-    SkillsComponent
+    SkillsComponent,
+    FooterComponent,
+    ResumeComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,7 @@ body {
 
 .letter {
     font-size: 60px;
-    color: rgba(216, 88, 86, 0.7);
+    color: white;
     font-weight: 900;
 }
 
@@ -17,4 +17,10 @@ body {
   color: white;
   font-size: 20px;
   font-weight: 300;
+}
+
+.subText .word3 .letter,
+.subText .word6 .letter,
+.subText .word9 .letter{
+  color: rgba(216, 88, 86, 0.7);
 }

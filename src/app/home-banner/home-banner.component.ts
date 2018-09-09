@@ -150,8 +150,8 @@ export class HomeBannerComponent implements OnInit {
         }
         }
 
-  text = "Hello, I'm Ryan Putman!";
-  subText = "Front-end Dev | Native Oregonian | Proud Goonie | Oregon Duck";
+  text = "Welcome, I'm Ryan Putman!";
+  subText = "Front-end Dev • Native Oregonian • Proud Goonie • Oregon Duck";
 
   effectOptions: TeximateOptions = {
     type: 'letter',

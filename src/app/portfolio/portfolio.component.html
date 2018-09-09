@@ -1,5 +1,5 @@
-<div class="portfolioContainer" [@scrollAnimation]="state">
-  <div class="container">
+<div class="portfolioContainer" [@scrollAnimation]="state" id="work">
+  <div class="container" >
     <h1 class="containerTitle">Some of my Work...</h1>
     <div class="categoryFilters">
       <button  class="btn"  [ngClass]="{'viewAll': selectedCategory == 'View All', 'unselected': selectedCategory !== 'View All'}" (click)="filterProjects('View All')">View All</button>
