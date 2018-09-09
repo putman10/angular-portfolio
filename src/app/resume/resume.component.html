@@ -1,3 +1,55 @@
-<p>
-  resume works!
-</p>
+<div class="resumeContainer" id="resume" >
+  <div class="container">
+    <h1 class="containerTitle" [@scrollAnimation]="state">My Resume...</h1>
+    <div class="education" [@flyInLeft]="state">
+      <h2>Education:</h2>
+      <div class="resumeItem">
+        <img class="logo" src="./assets/images/logos/oregonLogo.png" alt="Oregon logo">
+        <h3>University of Oregon</h3>
+        <p><em>2008-2012 - Eugene, OR</em></p>
+        <h5>B.A. Digital Art</h5>
+        <h6><em>Minor in Business Administration</em></h6>
+        <p>Gained knowlege in layout, print formating, illustration, web design and development, product design, animation, film and video. Business background in advertising, marketing, management, finance, economics and accounting.</p>
+      </div>
+      <div class="resumeItem">
+        <img class="logo" src="./assets/images/logos/epicodus.png" alt="Epicodus logo">
+        <h3>Epicodus: Technical School</h3>
+        <p><em>2018 - Portland, OR</em></p>
+        <h5>C# & React Track</h5>
+        <h6><em>React, AngularJS, C#, CSS, HTML</em></h6>
+        <p>Gained knowlege in layout, print formating, illustration, web design and development, product design, animation, film and video. Business background in advertising, marketing, management, finance, economics and accounting.</p>
+      </div>
+    </div>
+    <div class="experience" [@flyInRight]="state">
+      <h2>Work Experience:</h2>
+      <div class="resumeItem">
+        <img class="logo" src="./assets/images/logos/upLogo.png" alt="UP logo">
+        <h3>University of Portland</h3>
+        <p><em>2017-2018 - Portland, OR</em></p>
+        <h5>Program Manager of Marketing</h5>
+        <h6><em>Office of Alumni & Parent Relations</em></h6>
+        <p>Develop and execute marketing strategies and marketing plans and programs incorporating appropriate channels (i.e., web presence, digital, and print) to meet departmental and/or organizational objectives.</p>
+        <p>Design and drive alumni e-marketing and communications providing effective and brand aligned messaging. Specific duties include managing the alumni e-marketing calendar, and writing, editing, and producing monthly e-newsletters, local and regional e-blasts, and other key communications pieces for alumni as needed.</p>
+        <p>Manage and moderate all alumni social media channels and online platforms including Switchboard, Facebook, LinkedIn, and Twitter.</p>
+      </div>
+      <div class="resumeItem">
+        <img class="logo" src="./assets/images/logos/edgeOneLogo.png" alt="Edge One logo">
+        <h3>Edge One Media</h3>
+        <p><em>2013-2017 - Portland, OR</em></p>
+        <h5>Web / Graphic Designer</h5>
+        <p>Creation of over 50 custom responsive themes for Wordpress, and Drupal. Initial web site mockup design to manipulation of responsive wireframes using css, html, and javascript to create a working prototype of approved design. Creation of front-end elements and building out of interior pages with content.</p>
+        <p>Deal directly with clients to troubleshoot issues (plugin conflicts, security updates, malware removal on compromised sites), make content updates. Preventative security updates; wordpress/drupal core updates, plugin updates and security patch implementation.</p>
+        <p>Manage client help desk and delegate incoming tasks to team members.</p>
+        <p>Work with clients to build e-newsletters, print newsletters, print ad placements, direct mailings and other branding materials for their companies. Database creation, server management, CMS installation and transferring of sites between development and production servers.</p>
+      </div>
+      <div class="resumeItem">
+        <img class="logo" src="./assets/images/logos/logicalPositionLogo.png" alt="Logical Position logo">
+        <h3>Logical Position</h3>
+        <p><em>2013 - Portland, OR</em></p>
+        <h5>Internet Marketing Specialist</h5>
+        <p>Closed sales by: building rapport with potential accounts; explaining product and service </p>
+      </div>
+    </div>
+    <button type="button" class="resumeDownload" name="resumeDownload">Download PDF Resume</button>
+  </div>
+</div>
