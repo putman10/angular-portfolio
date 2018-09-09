@@ -1,9 +1,25 @@
 .containerTitle{
   font-size:60px;
   font-weight: 900;
-  color:white;
+  color: rgba(216, 88, 86, 0.7);
 }
 .skillsContainer{
   padding: 16rem 20px;
   margin: 7rem 0;
+  text-align: center;
+}
+.computer {
+    width: 300px;
+}
+.skill{
+    font-size: 40px;
+    color: white;
+}
+
+.logo {
+    width: 130px;
+}
+
+.computerTitle {
+    margin: 2rem 0 2.5rem;
 }

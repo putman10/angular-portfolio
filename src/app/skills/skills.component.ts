@@ -23,7 +23,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
       })),
       state('hide',   style({
         opacity: 0,
-        transform: "translateX(200%)"
+        transform: "translateX(100%)"
       })),
       transition('show => hide', animate('500ms ease-out')),
       transition('hide => show', animate('500ms ease-in'))
@@ -37,6 +37,32 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
       state('hide',   style({
         opacity: 0,
         transform: "translateX(-100%)"
+      })),
+      transition('show => hide', animate('500ms ease-out')),
+      transition('hide => show', animate('500ms ease-in'))
+    ]),
+    trigger('flyInTop', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateY(0)"
+
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translateY(-100%)"
+      })),
+      transition('show => hide', animate('500ms ease-out')),
+      transition('hide => show', animate('500ms ease-in'))
+    ]),
+    trigger('flyInBottom', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateY(0)"
+
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translateY(100%)"
       })),
       transition('show => hide', animate('500ms ease-out')),
       transition('hide => show', animate('500ms ease-in'))
