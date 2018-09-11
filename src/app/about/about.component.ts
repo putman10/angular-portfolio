@@ -18,12 +18,15 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])
   ]
 })
+
 export class AboutComponent implements OnInit {
   state = 'hide';
 
-  constructor(public el: ElementRef) { }
+  constructor(public el: ElementRef) {
+  }
 
   ngOnInit() {
+
   }
 
   @HostListener('window:scroll', ['$event'])

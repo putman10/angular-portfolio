@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { routing } from './app.routing';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
@@ -9,6 +10,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {TeximateModule} from "ng-teximate";
 import { ParticlesModule } from 'angular-particle';
+import { WeatherService } from './weather.service'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -24,7 +26,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+import { ForecastComponent } from './forecast/forecast.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -49,7 +51,7 @@ export const firebaseConfig = {
     FooterComponent,
     ResumeComponent,
     AboutComponent,
-    ContactComponent
+    ForecastComponent
   ],
   imports: [
     BrowserModule,
@@ -60,9 +62,10 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     BrowserAnimationsModule,
     TeximateModule,
-    ParticlesModule
+    ParticlesModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
