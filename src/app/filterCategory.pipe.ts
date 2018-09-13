@@ -10,13 +10,15 @@ import * as _ from 'lodash';
 export class FilterCategoryPipe implements PipeTransform {
   transform(input: Project[], filterCategory: string){
       let filteredArray = [];
-
+      if(input != null){
         input.forEach(function(element){
             if(element.category == filterCategory || filterCategory == "View All"){
               filteredArray.push(element);
+              
             } else {
               return;
             }
+      }  
       });
       return filteredArray;
     }

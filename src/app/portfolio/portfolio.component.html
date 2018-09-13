@@ -5,7 +5,7 @@
       <button  class="btn"  [ngClass]="{'viewAll': selectedCategory == 'View All', 'unselected': selectedCategory !== 'View All'}" (click)="filterProjects('View All')">View All</button>
       <button  class="btn" [ngClass]="{'unselected': selectedCategory !== project, 'orange':  selectedCategory == 'Angular' && project == 'Angular', 'blue': selectedCategory == 'Javascript' && project == 'Javascript', 'green': selectedCategory == 'UX' && project == 'UX', 'yellow': selectedCategory == 'C#' && project == 'C#', 'white': selectedCategory == 'Design' && project == 'Design', 'blueGreen': selectedCategory == 'React' && project == 'React'}" *ngFor="let project of categories" (click)="filterProjects(project)">{{project}}</button>
     </div>
-    <div *ngFor="let project of (projects | async)" class="portfolioDiv">
+    <div *ngFor="let project of (projects | async) | filterCategory: selectedCategory" class="portfolioDiv">
       <div (click)="viewProject(project.$key)" class="portfolioImage">
         <img src={{project.screenshots[0]}} >
         <p class="portfolioCategory" [ngClass]="{'orange': project.category == 'Angular', 'blue': project.category == 'Javascript', 'green': project.category == 'Wordpress', 'yellow': project.category == 'C#'}"
@@ -20,5 +20,6 @@
         <a href={{project.projectLink}}><button class="btn btn-right">Live Site</button></a>
       </div>
     </div>
+    <h1 class="containerTitle">View All On Github</h1>
   </div>
 </div>
