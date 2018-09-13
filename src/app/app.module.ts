@@ -10,7 +10,6 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {TeximateModule} from "ng-teximate";
 import { ParticlesModule } from 'angular-particle';
-import { WeatherService } from './weather.service'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -26,7 +25,6 @@ import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
-import { ForecastComponent } from './forecast/forecast.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -51,7 +49,6 @@ export const firebaseConfig = {
     FooterComponent,
     ResumeComponent,
     AboutComponent,
-    ForecastComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +62,6 @@ export const firebaseConfig = {
     ParticlesModule,
     HttpClientModule
   ],
-  providers: [WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
