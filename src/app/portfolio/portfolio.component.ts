@@ -31,6 +31,7 @@ export class PortfolioComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
   selectedCategory = "View All";
   state = 'hide';
+  categories = ["Angular", "C#", "Design", "Javascript", "React", "UX"]
 
     constructor(private router: Router, private projectService: ProjectService, private route: ActivatedRoute, private location: Location, public el: ElementRef) { }
 

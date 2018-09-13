@@ -15,9 +15,9 @@ export class FilterCategoryPipe implements PipeTransform {
             if(element.category == filterCategory || filterCategory == "View All"){
               filteredArray.push(element);
             } else {
+              return;
             }
       });
       return filteredArray;
-
     }
   }
