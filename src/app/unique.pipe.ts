@@ -10,17 +10,14 @@ import * as _ from 'lodash';
 export class UniquePipe implements PipeTransform {
   transform(input: Project[]){
     let filteredArray = [];
-
+    if(input != null){
       input.forEach(function(element){
-
           if(filteredArray.includes(element.category)){
-
-
           } else {
             filteredArray.push(element.category);
           }
     });
     return filteredArray;
-
+    }
   }
   }
