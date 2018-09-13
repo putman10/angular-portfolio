@@ -14,12 +14,12 @@ export class FilterCategoryPipe implements PipeTransform {
         input.forEach(function(element){
             if(element.category == filterCategory || filterCategory == "View All"){
               filteredArray.push(element);
-              
+
             } else {
               return;
             }
-      }  
-      });
+      })
+      }
       return filteredArray;
     }
   }

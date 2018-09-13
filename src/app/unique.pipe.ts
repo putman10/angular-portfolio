@@ -13,11 +13,12 @@ export class UniquePipe implements PipeTransform {
     if(input != null){
       input.forEach(function(element){
           if(filteredArray.includes(element.category)){
-          } else {
             filteredArray.push(element.category);
+          } else {
+            return;
           }
-    });
     return filteredArray;
-    }
-  }
-  }
+  })
+}
+}
+}
